@@ -1,0 +1,68 @@
+{
+  "livres": [
+    {
+      "id": "2",
+      "titre": "Dune",
+      "auteur": "Frank Herbert",
+      "genre": "Science-fiction",
+      "description": "Sur la planète désertique Arrakis, unique source de l'épice la plus précieuse de l'univers, le jeune Paul Atréides se retrouve au cœur d'intrigues politiques et de prophéties millénaires. Un chef-d'œuvre de la science-fiction qui explore écologie, religion et pouvoir.",
+      "couverture": "https://covers.openlibrary.org/b/id/12008862-L.jpg",
+      "aLire": false
+    },
+    {
+      "id": "3",
+      "titre": "Le Seigneur des Anneaux",
+      "auteur": "J.R.R. Tolkien",
+      "genre": "Fantasy",
+      "description": "Frodon Sacquet, un hobbit paisible, hérite d'un anneau magique aux pouvoirs terrifiants. Accompagné de ses compagnons fidèles, il entreprend un voyage épique à travers la Terre du Milieu pour détruire l'anneau et sauver le monde de l'emprise du Seigneur des Ténèbres Sauron.",
+      "couverture": "https://covers.openlibrary.org/b/id/9255566-L.jpg",
+      "aLire": true
+    },
+    {
+      "id": "4",
+      "titre": "La Peste",
+      "auteur": "Albert Camus",
+      "genre": "Drame",
+      "description": "Dans la ville d'Oran, soudainement frappée par une épidémie de peste, les habitants se retrouvent confinés et confrontés à la mort. À travers le regard du docteur Rieux, Camus explore l'absurdité de la condition humaine, la solidarité et la résistance face au malheur.",
+      "couverture": "https://covers.openlibrary.org/b/id/8091016-L.jpg",
+      "aLire": false
+    },
+    {
+      "id": "5",
+      "titre": "Fondation",
+      "auteur": "Isaac Asimov",
+      "genre": "Science-fiction",
+      "description": "Hari Seldon, mathématicien de génie, prédit la chute imminente de l'Empire Galactique grâce à la psychohistoire. Pour préserver le savoir de l'humanité, il crée la Fondation, une institution destinée à raccourcir la période d'obscurantisme et à rebâtir la civilisation.",
+      "couverture": "https://covers.openlibrary.org/b/id/7898938-L.jpg",
+      "aLire": false
+    },
+    {
+      "id": "6",
+      "titre": "Madame Bovary",
+      "auteur": "Gustave Flaubert",
+      "genre": "Classique",
+      "description": "Emma Bovary, femme d'un médecin de province, rêve d'une vie romanesque et passionnée loin de la monotonie du quotidien. Ses illusions et ses aventures amoureuses la mènent inexorablement vers la ruine et la tragédie dans ce chef-d'œuvre du réalisme littéraire.",
+      "couverture": "https://covers.openlibrary.org/b/id/10527843-L.jpg",
+      "aLire": false
+    },
+    {
+      "id": "7",
+      "titre": "Harry Potter à l'école des sorciers",
+      "auteur": "J.K. Rowling",
+      "genre": "Fantasy",
+      "description": "Le jour de ses onze ans, Harry Potter découvre qu'il est un sorcier et intègre l'école de magie de Poudlard. Confronté pour la première fois au mystère de sa propre histoire et à la menace du terrible Voldemort, il va vivre sa première grande aventure magique.",
+      "couverture": "https://covers.openlibrary.org/b/id/10110415-L.jpg",
+      "aLire": true
+    },
+    {
+      "id": "8",
+      "titre": "Crime et Châtiment",
+      "auteur": "Fiodor Dostoïevski",
+      "genre": "Drame",
+      "description": "Raskolnikov, un étudiant pauvre de Saint-Pétersbourg, commet un meurtre qu'il croit justifié par sa théorie des hommes extraordinaires. Rongé par la culpabilité et pourchassé par un inspecteur perspicace, il plonge dans un enfer psychologique haletant.",
+      "couverture": "https://covers.openlibrary.org/b/id/8269540-L.jpg",
+      "aLire": false
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
