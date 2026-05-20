@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lire Monde</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+</head>
+<body>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <!-- Overlay -->
+        <div class="overlay"></div>
+
+        <!-- Navbar -->
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <img src="images/logo.png" alt="logo">
+
+                <h2>Lire Monde</h2>
+
+            </div>
+
+            <div class="nav-links">
+
+                <a href="alire.html">To Read</a>
+
+                <a href="admin.html">Admin</a>
+
+            </div>
+
+        </nav>
+
+        <!-- Hero Content -->
+
+        <div class="hero-content">
+
+            <h1>Discover Your Books</h1>
+
+            <p>
+                “LireMonde helps you find, organize, and enjoy books
+                in a simple and interactive way.”
+            </p>
+
+            <!-- Search -->
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="search for a book..."
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= GENRES ================= -->
+
+    <section class="genres-section">
+
+        <div id="genreFilters" class="genres">
+
+            <!-- genres dynamically -->
+
+        </div>
+
+    </section>
+
+    <!-- ================= BOOKS ================= -->
+
+    <section class="books-section">
+
+        <div id="booksContainer" class="books-container">
+
+            <!-- books dynamically -->
+
+        </div>
+
+    </section>
+
+    <!-- JS -->
+    <script src="js/app.js"></script>
+
+</body>
+</html>
