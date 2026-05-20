@@ -1,66 +1,84 @@
 {
   "livres": [
     {
-      "id": "2",
-      "titre": "Dune",
-      "auteur": "Frank Herbert",
-      "genre": "Science-fiction",
-      "description": "Sur la planète désertique Arrakis, unique source de l'épice la plus précieuse de l'univers, le jeune Paul Atréides se retrouve au cœur d'intrigues politiques et de prophéties millénaires. Un chef-d'œuvre de la science-fiction qui explore écologie, religion et pouvoir.",
-      "couverture": "https://covers.openlibrary.org/b/id/12008862-L.jpg",
+      "id": 1,
+      "titre": "48 Laws of Power",
+      "auteur": "Robert Greene",
+      "genre": "Self-Help",
+      "description": "Un livre incontournable qui explore les stratégies de pouvoir utilisées à travers l’histoire par les rois, politiciens et grands leaders. Robert Greene présente 48 lois détaillées pour comprendre les relations humaines, développer son influence et éviter les manipulations dans la société moderne.",
+      "couverture": "images/48 Laws of Power.jpg",
       "aLire": false
     },
     {
-      "id": "3",
-      "titre": "Le Seigneur des Anneaux",
-      "auteur": "J.R.R. Tolkien",
-      "genre": "Fantasy",
-      "description": "Frodon Sacquet, un hobbit paisible, hérite d'un anneau magique aux pouvoirs terrifiants. Accompagné de ses compagnons fidèles, il entreprend un voyage épique à travers la Terre du Milieu pour détruire l'anneau et sauver le monde de l'emprise du Seigneur des Ténèbres Sauron.",
-      "couverture": "https://covers.openlibrary.org/b/id/9255566-L.jpg",
+      "id": 2,
+      "titre": "54 minutes",
+      "auteur": "Marieke Nijkamp",
+      "genre": "Drame",
+      "description": "Ce roman intense raconte l’histoire dramatique d’une fusillade dans un lycée vue à travers plusieurs personnages. Entre peur, survie et émotions fortes, le livre montre comment quelques minutes peuvent changer toute une vie.",
+      "couverture": "images/54 minutes.jpeg",
       "aLire": true
     },
     {
-      "id": "4",
-      "titre": "La Peste",
-      "auteur": "Albert Camus",
-      "genre": "Drame",
-      "description": "Dans la ville d'Oran, soudainement frappée par une épidémie de peste, les habitants se retrouvent confinés et confrontés à la mort. À travers le regard du docteur Rieux, Camus explore l'absurdité de la condition humaine, la solidarité et la résistance face au malheur.",
-      "couverture": "https://covers.openlibrary.org/b/id/8091016-L.jpg",
-      "aLire": false
-    },
-    {
-      "id": "5",
-      "titre": "Fondation",
-      "auteur": "Isaac Asimov",
-      "genre": "Science-fiction",
-      "description": "Hari Seldon, mathématicien de génie, prédit la chute imminente de l'Empire Galactique grâce à la psychohistoire. Pour préserver le savoir de l'humanité, il crée la Fondation, une institution destinée à raccourcir la période d'obscurantisme et à rebâtir la civilisation.",
-      "couverture": "https://covers.openlibrary.org/b/id/7898938-L.jpg",
-      "aLire": false
-    },
-    {
-      "id": "6",
-      "titre": "Madame Bovary",
-      "auteur": "Gustave Flaubert",
+      "id": 3,
+      "titre": "Antigone",
+      "auteur": "Jean Anouilh",
       "genre": "Classique",
-      "description": "Emma Bovary, femme d'un médecin de province, rêve d'une vie romanesque et passionnée loin de la monotonie du quotidien. Ses illusions et ses aventures amoureuses la mènent inexorablement vers la ruine et la tragédie dans ce chef-d'œuvre du réalisme littéraire.",
-      "couverture": "https://covers.openlibrary.org/b/id/10527843-L.jpg",
+      "description": "Inspirée de la tragédie grecque classique, cette œuvre raconte le combat d’Antigone contre l’autorité du roi Créon. Elle défend ses valeurs et sa liberté malgré les conséquences dramatiques de ses choix.",
+      "couverture": "images/Antigone.jpeg",
       "aLire": false
     },
     {
-      "id": "7",
-      "titre": "Harry Potter à l'école des sorciers",
+      "id": 4,
+      "titre": "Atomic habits",
+      "auteur": "James Clear",
+      "genre": "Self-Help",
+      "description": "James Clear explique comment de petites habitudes quotidiennes peuvent produire des changements incroyables sur le long terme. Le livre propose des méthodes simples et efficaces pour améliorer sa discipline, sa productivité et atteindre ses objectifs.",
+      "couverture": "images/Atomic habits.jpg",
+      "aLire": true
+    },
+    {
+      "id": 5,
+      "titre": "Can't hurt me",
+      "auteur": "David Goggins",
+      "genre": "Self-Help",
+      "description": "Dans cette autobiographie inspirante, David Goggins raconte son parcours difficile et comment il a transformé sa souffrance en force mentale. Le livre encourage à dépasser ses limites physiques et psychologiques.",
+      "couverture": "images/Can't hurt me.jpg",
+      "aLire": false
+    },
+    {
+      "id": 6,
+      "titre": "Candide ou l'Optimisme",
+      "auteur": "Voltaire",
+      "genre": "Classique",
+      "description": "À travers les aventures de Candide, Voltaire critique la société, la guerre et l’optimisme excessif. Ce classique de la littérature française mélange humour, réflexion philosophique et satire sociale.",
+      "couverture": "images/Candide ou l'Optimisme.jpeg",
+      "aLire": true
+    },
+    {
+      "id": 7,
+      "titre": "Fables",
+      "auteur": "Jean de La Fontaine",
+      "genre": "Classique",
+      "description": "Les Fables de La Fontaine regroupent plusieurs histoires courtes mettant en scène des animaux pour transmettre des leçons de morale. Ces récits restent parmi les œuvres les plus célèbres de la littérature française.",
+      "couverture": "images/Fables.jpeg",
+      "aLire": false
+    },
+    {
+      "id": 8,
+      "titre": "frankenstein",
+      "auteur": "Mary Shelley",
+      "genre": "Fantasy",
+      "description": "Victor Frankenstein crée une créature à partir de morceaux de corps humains, mais son expérience tourne rapidement au cauchemar. Ce roman mélange science, peur et réflexion sur les limites de l’humanité.",
+      "couverture": "images/frankenstein.jpeg",
+      "aLire": true
+    },
+    {
+      "id": 9,
+      "titre": "Harro Potter",
       "auteur": "J.K. Rowling",
       "genre": "Fantasy",
-      "description": "Le jour de ses onze ans, Harry Potter découvre qu'il est un sorcier et intègre l'école de magie de Poudlard. Confronté pour la première fois au mystère de sa propre histoire et à la menace du terrible Voldemort, il va vivre sa première grande aventure magique.",
-      "couverture": "https://covers.openlibrary.org/b/id/10110415-L.jpg",
-      "aLire": true
-    },
-    {
-      "id": "8",
-      "titre": "Crime et Châtiment",
-      "auteur": "Fiodor Dostoïevski",
-      "genre": "Drame",
-      "description": "Raskolnikov, un étudiant pauvre de Saint-Pétersbourg, commet un meurtre qu'il croit justifié par sa théorie des hommes extraordinaires. Rongé par la culpabilité et pourchassé par un inspecteur perspicace, il plonge dans un enfer psychologique haletant.",
-      "couverture": "https://covers.openlibrary.org/b/id/8269540-L.jpg",
+      "description": "Harry Potter découvre qu'il est un jeune sorcier destiné à vivre des aventures extraordinaires à Poudlard. Entre magie, amitié et affrontement contre les forces du mal, cette saga est devenue un phénomène mondial.",
+      "couverture": "images/Harro Potter.jpeg",
       "aLire": false
     }
   ],
