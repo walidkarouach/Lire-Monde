@@ -200,6 +200,122 @@ body{
     background: #102c63;
 }
 
+
+/* ================= MODAL ================= */
+
+.modal{
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background: rgba(0,0,0,0.7);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999;
+}
+
+/* active modal */
+
+.modal.show{
+    display: flex;
+}
+
+.modal-content{
+    width: 800px;
+
+    background: #b7aea1;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    position: relative;
+}
+
+/* close */
+
+.close-modal{
+    position: absolute;
+
+    top: 15px;
+    right: 25px;
+
+    font-size: 35px;
+
+    cursor: pointer;
+}
+
+/* body */
+
+#modalBody{
+    display: flex;
+    gap: 30px;
+}
+
+#modalBody img{
+    width: 300px;
+    height: 420px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+.modal-info{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.genre{
+    color: #071f49;
+}
+
+.modal-info h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.modal-info h4{
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.modal-info h4 span{
+    color: #666;
+    font-weight: normal;
+}
+
+.modal-info p{
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.modal-info button{
+    border: none;
+
+    background: #071f49;
+    color: white;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    font-size: 18px;
+}
+
+
 /* ================= FOOTER ================= */
 
 .footer{

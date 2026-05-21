@@ -43,20 +43,33 @@ function displayBooks(data) {
 
     data.forEach(book => {
 
-        booksContainer.innerHTML += `
+        const card = document.createElement("div");
 
-            <div class="book-card">
+        card.classList.add("book-card");
 
-                <img src="${book.couverture}"
-                alt="${book.titre}">
+        card.innerHTML = `
 
-                <button>
-                    Book Details
-                </button>
+            <img src="${book.couverture}"
+            alt="${book.titre}">
 
-            </div>
+            <button>
+                Book Details
+            </button>
 
         `;
+
+        /* button */
+
+        const button =
+        card.querySelector("button");
+
+        button.addEventListener("click", () => {
+
+            openModal(book);
+
+        });
+
+        booksContainer.appendChild(card);
 
     });
 
