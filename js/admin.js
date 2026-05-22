@@ -33,3 +33,29 @@ document.getElementById("description");
 const coverInput =
 document.getElementById("cover");
 
+/* ================= FETCH ================= */
+
+async function fetchBooks(){
+
+    try{
+
+        const response =
+        await fetch(
+            "http://localhost:3000/livres"
+        );
+
+        const books =
+        await response.json();
+
+        displayBooks(books);
+
+    }
+
+    catch(error){
+
+        console.log(error);
+
+    }
+
+}
+
