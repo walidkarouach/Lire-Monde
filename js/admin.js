@@ -59,3 +59,104 @@ async function fetchBooks(){
 
 }
 
+/* ================= DISPLAY ================= */
+
+function displayBooks(books){
+
+    tableBody.innerHTML = "";
+
+    books.forEach(book => {
+
+        const tr =
+        document.createElement("tr");
+
+        tr.innerHTML = `
+
+            <td>
+                <img src="${book.couverture}">
+            </td>
+
+            <td>${book.titre}</td>
+
+            <td>${book.auteur}</td>
+
+            <td>${book.genre}</td>
+
+            <td>
+
+                <div class="action-btns">
+
+                    <button class="delete-table-btn">
+
+                        X
+
+                    </button>
+
+                    <button class="edit-btn">
+
+                        <i class="fa-solid fa-pen"></i>
+
+                    </button>
+
+                </div>
+
+            </td>
+
+        `;
+
+        /* delete */
+
+        const deleteBtn =
+        tr.querySelector(".delete-table-btn");
+
+        deleteBtn.addEventListener("click", () => {
+
+            deleteBook(book.id);
+
+        });
+
+        /* edit */
+
+        const editBtn =
+        tr.querySelector(".edit-btn");
+
+        editBtn.addEventListener("click", () => {
+
+            editBook(book);
+
+        });
+
+        tableBody.appendChild(tr);
+
+    });
+
+}
+
+/* ================= OPEN ================= */
+
+openAddModal.addEventListener("click", () => {
+
+    adminModal.classList.add("show");
+
+});
+
+/* ================= CLOSE ================= */
+
+cancelBtn.addEventListener("click", () => {
+
+    adminModal.classList.remove("show");
+
+    resetForm();
+
+});
+
+/* ================= RESET ================= */
+
+function resetForm(){
+
+    bookForm.reset();
+
+    bookId.value = "";
+
+}
+
