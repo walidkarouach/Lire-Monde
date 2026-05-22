@@ -160,3 +160,163 @@ function resetForm(){
 
 }
 
+/* ================= ADD / UPDATE ================= */
+
+bookForm.addEventListener("submit",
+async (e) => {
+
+    e.preventDefault();
+
+const newBook = {
+
+    id: Date.now(),
+
+    titre: titleInput.value,
+
+    auteur: authorInput.value,
+
+    genre: genreInput.value,
+
+    description:
+    descriptionInput.value,
+
+    couverture:
+    coverInput.value,
+
+    aLire: false
+
+};
+
+    try{
+
+        /* update */
+
+        if(bookId.value){
+
+            await fetch(
+
+                `http://localhost:3000/livres/${bookId.value}`,
+
+                {
+                    method: "PUT",
+
+                    headers:{
+                        "Content-Type":
+                        "application/json"
+                    },
+
+                    body: JSON.stringify(newBook)
+
+                }
+
+            );
+
+        }
+
+        /* add */
+
+        else{
+
+            await fetch(
+
+                "http://localhost:3000/livres",
+
+                {
+                    method: "POST",
+
+                    headers:{
+                        "Content-Type":
+                        "application/json"
+                    },
+
+                    body: JSON.stringify(newBook)
+
+                }
+
+            );
+
+        }
+
+        fetchBooks();
+
+        adminModal.classList.remove("show");
+
+        resetForm();
+
+    }
+
+    catch(error){
+
+        console.log(error);
+
+    }
+
+});
+
+/* ================= DELETE ================= */
+
+async function deleteBook(id){
+
+    try{
+
+        const response = await fetch(
+
+            `http://localhost:3000/livres/${id}`,
+
+            {
+                method: "DELETE"
+            }
+
+        );
+
+        if(!response.ok){
+
+            throw new Error(
+                "Delete failed"
+            );
+
+        }
+
+        fetchBooks();
+
+    }
+
+    catch(error){
+
+        console.log(
+            "Erreur delete :",
+            error
+        );
+
+    }
+
+}
+
+/* ================= EDIT ================= */
+
+function editBook(book){
+
+    adminModal.classList.add("show");
+
+    document.getElementById("modalTitle")
+    .innerText = "Edit Book";
+
+    bookId.value = book.id;
+
+    titleInput.value = book.titre;
+
+    authorInput.value = book.auteur;
+
+    genreInput.value = book.genre;
+
+    descriptionInput.value =
+    book.description;
+
+    coverInput.value =
+    book.couverture;
+
+}
+
+/* ================= START ================= */
+
+fetchBooks();
