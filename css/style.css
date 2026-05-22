@@ -368,6 +368,223 @@ body{
     background: red;
 }
 
+/* ================= ADMIN ================= */
+
+.admin-header{
+    width: 90%;
+
+    margin: 150px auto 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-header h1{
+    color: #071f49;
+    font-size: 50px;
+}
+
+.admin-header p{
+    color: #071f49;
+}
+
+.add-book-btn{
+    border: none;
+
+    background: #071f49;
+    color: white;
+
+    padding: 25px 60px;
+
+    border-radius: 50px;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+/* ================= TABLE ================= */
+
+.table-section{
+    width: 90%;
+    margin: auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead{
+    background: #5f5b5b;
+    color: white;
+}
+
+th{
+    padding: 30px;
+    font-size: 30px;
+}
+
+td{
+    text-align: center;
+    padding: 25px;
+    font-size: 25px;
+
+    border: 1px solid #444;
+}
+
+td img{
+    width: 90px;
+    height: 130px;
+
+    object-fit: cover;
+}
+
+/* buttons */
+
+.action-btns{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.delete-table-btn,
+.edit-btn{
+    border: none;
+
+    width: 55px;
+    height: 55px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    color: white;
+    font-size: 22px;
+}
+
+.delete-table-btn{
+    background: darkred;
+}
+
+.edit-btn{
+    background: #071f49;
+}
+
+/* ================= MODAL ================= */
+
+.admin-modal{
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background: rgba(0,0,0,0.5);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999;
+}
+
+.admin-modal.show{
+    display: flex;
+}
+
+.admin-modal-content{
+    width: 500px;
+
+    background: #b7aea1;
+
+    padding: 25px;
+
+    border-radius: 15px;
+    margin-top: 80px;
+}
+
+.admin-modal-content h2{
+    text-align: center;
+
+    color: #071f49;
+
+    margin-bottom: 20px;
+
+    font-size: 35px;
+}
+
+/* form */
+
+#bookForm{
+    display: flex;
+    flex-direction: column;
+}
+
+#bookForm label{
+    margin: 12px 0 6px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    color: #071f49;
+}
+
+#bookForm input,
+#bookForm select,
+#bookForm textarea{
+    border: none;
+    outline: none;
+
+    padding: 14px;
+
+    border-radius: 12px;
+
+    font-size: 16px;
+}
+
+#bookForm textarea{
+    resize: none;
+    height: 90px;
+}
+
+/* buttons */
+
+.form-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    margin-top: 25px;
+}
+
+.cancel-btn,
+.save-btn{
+    border: none;
+
+    padding: 14px 35px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cancel-btn{
+    background: #ececec;
+}
+
+.save-btn{
+    background: #071f49;
+    color: white;
+}
 
 /* ================= FOOTER ================= */
 

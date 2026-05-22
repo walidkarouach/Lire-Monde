@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Admin</title>
+
+    <link rel="stylesheet"
+    href="css/style.css">
+
+    <!-- icons -->
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+         <a href="index.html" class="logo-a">
+            <div class="logo">
+
+                <img src="images/logo.png" alt="logo">
+
+                <h2>Lire Monde</h2>
+
+            </div>
+         </a>
+
+        </div>
+
+        <div class="nav-links">
+
+            <a href="admin.html"
+            class="active-nav">
+                Admin
+            </a>
+
+        </div>
+
+    </nav>
+
+    <!-- ================= HEADER ================= -->
+
+    <section class="admin-header">
+
+        <div>
+
+            <h1>Book Management</h1>
+
+            <p>
+                Manage all books on the platform
+            </p>
+
+        </div>
+
+        <button id="openAddModal"
+        class="add-book-btn">
+
+            + Add a Book
+
+        </button>
+
+    </section>
+
+    <!-- ================= TABLE ================= -->
+
+    <section class="table-section">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Cover</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="tableBody">
+
+                <!-- dynamic -->
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <!-- ================= MODAL ================= -->
+
+    <div id="adminModal"
+    class="admin-modal">
+
+        <div class="admin-modal-content">
+
+            <h2 id="modalTitle">
+                Add a Book
+            </h2>
+
+            <form id="bookForm">
+
+                <input type="hidden"
+                id="bookId">
+
+                <!-- title -->
+
+                <label>Title</label>
+
+                <input
+                type="text"
+                id="title"
+                placeholder="Ex : Dracula..."
+                required>
+
+                <!-- author -->
+
+                <label>Author</label>
+
+                <input
+                type="text"
+                id="author"
+                placeholder="Ex : Bram Stoker..."
+                required>
+
+                <!-- genre -->
+
+                <label>Genre</label>
+
+                <select id="genre">
+
+                    <option value="">
+                        Select a Genre
+                    </option>
+
+                    <option>
+                        Fantasy
+                    </option>
+
+                    <option>
+                        Drame
+                    </option>
+
+                    <option>
+                        Classique
+                    </option>
+
+                    <option>
+                        Science-fiction
+                    </option>
+
+                    <option>
+                        Self-help
+                    </option>
+
+                </select>
+
+                <!-- description -->
+
+                <label>Description</label>
+
+                <textarea
+                id="description"
+                placeholder="Book Description..."
+                required></textarea>
+
+                <!-- cover -->
+
+                <label>Cover (URL)</label>
+
+                <input
+                type="text"
+                id="cover"
+                placeholder="https://example.com/cover.jpg"
+                required>
+
+                <!-- buttons -->
+
+                <div class="form-buttons">
+
+                    <button type="button"
+                    id="cancelBtn"
+                    class="cancel-btn">
+
+                        Cancel
+
+                    </button>
+
+                    <button type="submit"
+                    class="save-btn">
+
+                        Save
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- JS -->
+
+    <script src="js/admin.js"></script>
+
+</body>
+</html>
