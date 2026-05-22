@@ -36,7 +36,7 @@ function openModal(book){
                 ${book.description}
             </p>
 
-            <button>
+            <button id="readBtn">
 
                 ${book.aLire
                     ? "Remove From List"
@@ -48,9 +48,74 @@ function openModal(book){
 
     `;
 
+    /* button */
+
+    const readBtn =
+    document.getElementById("readBtn");
+
+    readBtn.addEventListener("click", () => {
+
+        toggleRead(book);
+
+    });
+
 }
 
-/* ================= CLOSE MODAL ================= */
+/* ================= TO READ ================= */
+
+async function toggleRead(book){
+
+    try{
+
+        const response = await fetch(
+
+            `http://localhost:3000/livres/${book.id}`,
+
+            {
+                method: "PATCH",
+
+                headers:{
+                    "Content-Type":
+                    "application/json"
+                },
+
+                body: JSON.stringify({
+
+                    aLire: !book.aLire
+
+                })
+
+            }
+
+        );
+
+        if(!response.ok){
+
+            throw new Error(
+                "Erreur PATCH"
+            );
+
+        }
+
+        /* update value */
+
+        book.aLire = !book.aLire;
+
+        /* reopen */
+
+        openModal(book);
+
+    }
+
+    catch(error){
+
+        console.log(error);
+
+    }
+
+}
+
+/* ================= CLOSE ================= */
 
 closeModal.addEventListener("click", () => {
 
@@ -58,7 +123,7 @@ closeModal.addEventListener("click", () => {
 
 });
 
-/* close outside */
+/* outside */
 
 window.addEventListener("click", (e) => {
 

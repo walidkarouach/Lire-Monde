@@ -1,7 +1,7 @@
 {
   "livres": [
     {
-      "id": 1,
+      "id": "1",
       "titre": "48 Laws of Power",
       "auteur": "Robert Greene",
       "genre": "Self-Help",
@@ -10,16 +10,16 @@
       "aLire": false
     },
     {
-      "id": 2,
+      "id": "2",
       "titre": "54 minutes",
       "auteur": "Marieke Nijkamp",
       "genre": "Drame",
       "description": "Ce roman intense raconte l’histoire dramatique d’une fusillade dans un lycée vue à travers plusieurs personnages. Entre peur, survie et émotions fortes, le livre montre comment quelques minutes peuvent changer toute une vie.",
       "couverture": "images/54 minutes.jpeg",
-      "aLire": true
+      "aLire": false
     },
     {
-      "id": 3,
+      "id": "3",
       "titre": "Antigone",
       "auteur": "Jean Anouilh",
       "genre": "Classique",
@@ -28,16 +28,16 @@
       "aLire": false
     },
     {
-      "id": 4,
+      "id": "4",
       "titre": "Atomic habits",
       "auteur": "James Clear",
       "genre": "Self-Help",
       "description": "James Clear explique comment de petites habitudes quotidiennes peuvent produire des changements incroyables sur le long terme. Le livre propose des méthodes simples et efficaces pour améliorer sa discipline, sa productivité et atteindre ses objectifs.",
       "couverture": "images/Atomic habits.jpg",
-      "aLire": true
+      "aLire": false
     },
     {
-      "id": 5,
+      "id": "5",
       "titre": "Can't hurt me",
       "auteur": "David Goggins",
       "genre": "Self-Help",
@@ -46,16 +46,16 @@
       "aLire": false
     },
     {
-      "id": 6,
+      "id": "6",
       "titre": "Candide ou l'Optimisme",
       "auteur": "Voltaire",
       "genre": "Classique",
       "description": "À travers les aventures de Candide, Voltaire critique la société, la guerre et l’optimisme excessif. Ce classique de la littérature française mélange humour, réflexion philosophique et satire sociale.",
       "couverture": "images/Candide ou l'Optimisme.jpeg",
-      "aLire": true
+      "aLire": false
     },
     {
-      "id": 7,
+      "id": "7",
       "titre": "Fables",
       "auteur": "Jean de La Fontaine",
       "genre": "Classique",
@@ -64,16 +64,16 @@
       "aLire": false
     },
     {
-      "id": 8,
+      "id": "8",
       "titre": "frankenstein",
       "auteur": "Mary Shelley",
       "genre": "Fantasy",
       "description": "Victor Frankenstein crée une créature à partir de morceaux de corps humains, mais son expérience tourne rapidement au cauchemar. Ce roman mélange science, peur et réflexion sur les limites de l’humanité.",
       "couverture": "images/frankenstein.jpeg",
-      "aLire": true
+      "aLire": false
     },
     {
-      "id": 9,
+      "id": "9",
       "titre": "Harro Potter",
       "auteur": "J.K. Rowling",
       "genre": "Fantasy",
@@ -81,5 +81,6 @@
       "couverture": "images/Harro Potter.jpeg",
       "aLire": false
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
