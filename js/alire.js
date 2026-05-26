@@ -28,11 +28,8 @@ async function fetchToReadBooks(){
 
     catch(error){
 
-        console.log(
-            "Erreur :",
-            error
-        );
-
+        console.log("Erreur :", error);
+        
     }
 
 }

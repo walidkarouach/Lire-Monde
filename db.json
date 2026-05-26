@@ -1,6 +1,15 @@
 {
   "livres": [
     {
+      "id": 1,
+      "titre": "48 Laws of Power",
+      "auteur": "Robert Greene",
+      "genre": "Développement personnel",
+      "description": "Un livre incontournable qui explore les stratégies de pouvoir utilisées à travers l’histoire par les rois, politiciens et grands leaders. Robert Greene présente 48 lois détaillées pour comprendre les relations humaines, développer son influence et éviter les manipulations dans la société moderne.",
+      "couverture": "images/48 Laws of Power.jpg",
+      "aLire": false
+    },
+    {
       "id": "2",
       "titre": "54 minutes",
       "auteur": "Marieke Nijkamp",
@@ -52,6 +61,24 @@
       "genre": "Classique",
       "description": "Les Fables de La Fontaine regroupent plusieurs histoires courtes mettant en scène des animaux pour transmettre des leçons de morale. Ces récits restent parmi les œuvres les plus célèbres de la littérature française.",
       "couverture": "images/Fables.jpeg",
+      "aLire": false
+    },
+      {
+      "id": 8,
+      "titre": "frankenstein",
+      "auteur": "Mary Shelley",
+      "genre": "Horreur",
+      "description": "Victor Frankenstein crée une créature à partir de morceaux de corps humains, mais son expérience tourne rapidement au cauchemar. Ce roman mélange science, peur et réflexion sur les limites de l’humanité.",
+      "couverture": "images/frankenstein.jpeg",
+      "aLire": true
+    },
+    {
+      "id": 9,
+      "titre": "Harro Potter",
+      "auteur": "J.K. Rowling",
+      "genre": "Fantasy",
+      "description": "Harry Potter découvre qu’il est un jeune sorcier destiné à vivre des aventures extraordinaires à Poudlard. Entre magie, amitié et affrontement contre les forces du mal, cette saga est devenue un phénomène mondial.",
+      "couverture": "images/Harro Potter.jpeg",
       "aLire": false
     }
   ]
