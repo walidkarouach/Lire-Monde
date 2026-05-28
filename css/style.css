@@ -36,18 +36,25 @@ body{
 .navbar{
     width: 85%;
     height: 70px;
+
     background: #ece8e2;
-    padding: 0 40px;
+
+    padding: 0 30px;
+
     border-radius: 50px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     position: fixed;
+
     top: 20px;
     left: 50%;
+
     transform: translateX(-50%);
+
     z-index: 1000;
-    backdrop-filter: blur(10px);
 }
 
 .logo{
@@ -71,16 +78,19 @@ body{
 
 .nav-links{
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
 .nav-links a{
     text-decoration: none;
+
     background: #071f49;
     color: white;
-    padding: 12px 25px;
+
+    padding: 10px 20px;
+
     border-radius: 30px;
-    transition: 0.3s;
 }
 
 .nav-links a:hover{
@@ -170,7 +180,7 @@ body{
 .books-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    gap: 30px;
 }
 
 /* ================= BOOK CARD ================= */
@@ -660,3 +670,184 @@ td img{
     text-align: center;
     color: #222;
 }
+
+/* ================= TABLET ================= */
+
+@media (max-width: 992px){
+
+    /* Navbar */
+
+    .navbar{
+        width: 95%;
+        padding: 0 20px;
+    }
+
+    /* Hero */
+
+    .hero-content h1{
+        font-size: 50px;
+    }
+
+    .search-box{
+        width: 80%;
+    }
+
+    /* Books */
+
+    .books-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* Footer */
+
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-right{
+        align-items: center;
+    }
+
+    /* Admin */
+
+    .admin-header{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .table-section{
+        overflow-x: auto;
+    }
+
+    table{
+        min-width: 700px;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px){
+
+    /* Navbar */
+
+    .navbar{
+        width: 95%;
+        height: 65px;
+
+        padding: 0 10px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo img{
+        width: 80px;
+    }
+
+    .nav-links{
+        display: flex;
+        gap: 5px;
+    }
+
+    .nav-links a{
+        font-size: 11px;
+        padding: 8px 10px;
+        border-radius: 20px;
+    }
+
+    /* Hero */
+
+    .hero-content h1{
+        font-size: 40px;
+    }
+
+    .hero-content p{
+        font-size: 14px;
+        padding: 0 20px;
+    }
+
+    .search-box{
+        width: 90%;
+    }
+
+    /* Filters */
+
+    .genres-container{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    /* Books */
+
+    .books-container{
+        grid-template-columns: 1fr;
+    }
+
+    .book-card img{
+        width: 100%;
+        height: auto;
+    }
+
+    /* Modal */
+
+    .modal-content{
+        width: 95%;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .modal-content img{
+        width: 200px;
+        margin: auto;
+    }
+
+    .modal-info{
+        text-align: center;
+    }
+
+    /* To Read */
+
+    .to-read-title{
+        text-align: center;
+    }
+
+    /* Footer */
+
+    .footer{
+        width: 95%;
+        padding: 30px 20px;
+    }
+
+    .footer-left img{
+        width: 180px;
+    }
+
+    /* Admin */
+
+    .admin-header h1{
+        font-size: 35px;
+    }
+
+    .add-book-btn{
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+
+    .admin-modal-content{
+        width: 95%;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .admin-modal-content h2{
+        font-size: 30px;
+    }
+
+}
+

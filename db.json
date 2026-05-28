@@ -1,10 +1,10 @@
 {
   "livres": [
     {
-      "id": 1,
+      "id": "1",
       "titre": "48 Laws of Power",
       "auteur": "Robert Greene",
-      "genre": "Développement personnel",
+      "genre": "Self-Help",
       "description": "Un livre incontournable qui explore les stratégies de pouvoir utilisées à travers l’histoire par les rois, politiciens et grands leaders. Robert Greene présente 48 lois détaillées pour comprendre les relations humaines, développer son influence et éviter les manipulations dans la société moderne.",
       "couverture": "images/48 Laws of Power.jpg",
       "aLire": false
@@ -25,7 +25,7 @@
       "genre": "Classique",
       "description": "Inspirée de la tragédie grecque classique, cette œuvre raconte le combat d’Antigone contre l’autorité du roi Créon. Elle défend ses valeurs et sa liberté malgré les conséquences dramatiques de ses choix.",
       "couverture": "images/Antigone.jpeg",
-      "aLire": false
+      "aLire": true
     },
     {
       "id": "4",
@@ -63,17 +63,17 @@
       "couverture": "images/Fables.jpeg",
       "aLire": false
     },
-      {
-      "id": 8,
+    {
+      "id": "8",
       "titre": "frankenstein",
       "auteur": "Mary Shelley",
-      "genre": "Horreur",
+      "genre": "Fantasy",
       "description": "Victor Frankenstein crée une créature à partir de morceaux de corps humains, mais son expérience tourne rapidement au cauchemar. Ce roman mélange science, peur et réflexion sur les limites de l’humanité.",
       "couverture": "images/frankenstein.jpeg",
       "aLire": true
     },
     {
-      "id": 9,
+      "id": "9",
       "titre": "Harro Potter",
       "auteur": "J.K. Rowling",
       "genre": "Fantasy",
